@@ -1,6 +1,8 @@
 # CopyThat
 ## Grab/Inject Clipboard Content
 
+## Instragram: https://instagram.com/programemerz
+
 Browsers are implementing a new JavaScript API for asynchronous clipboard access to integrate copy and paste into web applications. It is a replacement for the synchronous execCommand-based copy & paste. Async Clipboard requests doesn't block the page while waiting the process, it's a improvement over sync requests as well as simplifying events and aligning them with the Drag & Drop API.
 
 CopyThat is a pentester tool that can read and write content to the clipboard by just opening a link, using async clipboard API.
