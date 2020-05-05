@@ -34,3 +34,14 @@ navigator.clipboard.readText().then(clipText =>  document.write(clipText));
 Users routinely copy sensitive information like passwords and personal details to the clipboard,  which could then be read by any page. Clipboardme tool can create a HTTPS malicious page to grab that content.
 
 To help prevent abuse, clipboard access is only allowed when a page is the active tab and over secured domains (https). Pages in active tabs can write to the clipboard without requesting permission, but reading from the clipboard always requires permission.
+
+## Legal disclaimer:
+
+Usage of CopyThat for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. 
+
+### Usage:
+```
+git clone https://github.com/programemerz/copythat
+cd copythat
+bash copythat.sh
+```
