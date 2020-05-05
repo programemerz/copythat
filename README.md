@@ -1,11 +1,11 @@
-# Clipboardme
+# CopyThat
 ## Grab/Inject Clipboard Content
 
 Browsers are implementing a new JavaScript API for asynchronous clipboard access to integrate copy and paste into web applications. It is a replacement for the synchronous execCommand-based copy & paste. Async Clipboard requests doesn't block the page while waiting the process, it's a improvement over sync requests as well as simplifying events and aligning them with the Drag & Drop API.
 
-Clipboardme is a pentester tool that can read and write content to the clipboard by just opening a link, using async clipboard API.
+CopyThat is a pentester tool that can read and write content to the clipboard by just opening a link, using async clipboard API.
 
-![cb](https://user-images.githubusercontent.com/34893261/56546581-335d0000-6551-11e9-85c0-12ee672b3fb4.png)
+![cb](image.png)
 
 ## How does Async Clipboard API work?
 
@@ -34,9 +34,3 @@ navigator.clipboard.readText().then(clipText =>  document.write(clipText));
 Users routinely copy sensitive information like passwords and personal details to the clipboard,  which could then be read by any page. Clipboardme tool can create a HTTPS malicious page to grab that content.
 
 To help prevent abuse, clipboard access is only allowed when a page is the active tab and over secured domains (https). Pages in active tabs can write to the clipboard without requesting permission, but reading from the clipboard always requires permission.
-
-### Browser compatibility:
-Chrome 66,
-Opera 53,
-Chrome for Android,
-Opera for Android
